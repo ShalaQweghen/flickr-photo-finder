@@ -8,7 +8,5 @@
 </div>
 
 <% if @user_id %>
-	<% cache("flickr_sidebar") do %>
- 	 <%= render_flickr_sidebar_widget(@user_id) %>
- 	<% end %>
+ 	<%= render_flickr_sidebar_widget(@user_id) %>
 <% end %>
